@@ -8,27 +8,30 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { colors } from './src/theme';
 import { DashboardScreen } from './src/screens/DashboardScreen';
 import { ScannerScreen } from './src/screens/ScannerScreen';
-import { CalendarScreen } from './src/screens/CalendarScreen';
-import { AlertsScreen } from './src/screens/AlertsScreen';
+import CalendarScreen from './src/screens/CalendarScreen';
 import { WatchlistScreen } from './src/screens/WatchlistScreen';
 import { PairDetailScreen } from './src/screens/PairDetailScreen';
 import { SettingsScreen } from './src/screens/SettingsScreen';
-import { NewsScreen } from './src/screens/NewsScreen';
-import { MacroScreen } from './src/screens/MacroScreen';
+import NewsScreen from './src/screens/NewsScreen';
+import  MacroScreen  from './src/screens/MacroScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
 // Mirror the MobileTabBar tabs exactly:
-// Dashboard, Scanner, Calendar, Alerts, Watchlist
+// Dashboard, Scanner, Calendar, Alerts, Watchlist  
 function MainTabs() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{
+      headerStyle: { backgroundColor: colors.card },
+      headerTintColor: colors.foreground,
+      headerTitleStyle: { color: colors.foreground },
+    }}>
       <Tab.Screen name="Dashboard" component={DashboardScreen} />
-      <Tab.Screen name="Scanner" component={ScannerScreen} />
+      <Tab.Screen name="Macro" component={MacroScreen} />
       <Tab.Screen name="Calendar" component={CalendarScreen} />
-      <Tab.Screen name="Alerts" component={AlertsScreen} />
-      <Tab.Screen name="Watchlist" component={WatchlistScreen} />
+      <Tab.Screen name="News" component={NewsScreen} />
+      <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>
   );
 }
