@@ -21,30 +21,32 @@ import {
   View,
 } from 'react-native';
 
+import { C } from '../theme';
+
 // ─── THEME ────────────────────────────────────────────────────────────────────
-const C = {
-  bg:        '#0a0d14',   // dark navy — matches Macro screen bg
-  bgDeep:    '#060810',
-  surface:   '#111827',   // card surfaces
-  surfaceHi: '#1a2235',
-  border:    '#1e2d45',
-  borderDim: '#111c2e',
-  text:      '#e2e8f0',
-  sub:       '#94a3b8',
-  muted:     '#4a6080',
-  dim:       '#1e2d45',
-  green:     '#22c55e',
-  greenDim:  '#166534',
-  red:       '#ef4444',
-  amber:     '#f59e0b',
-  blue:      '#3b82f6',
-  purple:    '#a78bfa',
-  cyan:      '#38bdf8',
-  orange:    '#f97316',
-  teal:      '#2dd4bf',
-  pink:      '#ec4899',
-  yellow:    '#eab308',
-};
+// const C = {
+//   bg:        '#0a0d14',   // dark navy — matches Macro screen bg
+//   bgDeep:    '#060810',
+//   surface:   '#111827',   // card surfaces
+//   surfaceHi: '#1a2235',
+//   border:    '#1e2d45',
+//   borderDim: '#111c2e',
+//   text:      '#e2e8f0',
+//   sub:       '#94a3b8',
+//   muted:     '#4a6080',
+//   dim:       '#1e2d45',
+//   green:     '#22c55e',
+//   greenDim:  '#166534',
+//   red:       '#ef4444',
+//   amber:     '#f59e0b',
+//   blue:      '#3b82f6',
+//   purple:    '#a78bfa',
+//   cyan:      '#38bdf8',
+//   orange:    '#f97316',
+//   teal:      '#2dd4bf',
+//   pink:      '#ec4899',
+//   yellow:    '#eab308',
+// };
 
 // ─── TYPES ────────────────────────────────────────────────────────────────────
 type Impact       = 'high' | 'medium' | 'low' | 'holiday';

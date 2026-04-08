@@ -36,6 +36,8 @@ import {
   View,
   useWindowDimensions,
 } from 'react-native';
+import { C } from '../theme';
+
 
 // ─── ENV ─────────────────────────────────────────────────────────────────────
 const NEWS_API_KEY =
@@ -44,25 +46,25 @@ const NEWS_API_KEY =
 const NEWS_BASE = 'https://newsapi.org/v2';
 
 // ─── THEME ────────────────────────────────────────────────────────────────────
-const C = {
-  bg:         '#080d18',
-  surface:    '#0e1420',
-  surfaceHi:  '#131c2e',
-  border:     '#1c2a40',
-  borderDim:  '#111929',
-  text:       '#f0f4fa',
-  sub:        '#cbd5e1',
-  muted:      '#5a7090',
-  dim:        '#2a3a52',
-  green:      '#22c55e',
-  red:        '#ef4444',
-  blue:       '#3b82f6',
-  amber:      '#f59e0b',
-  purple:     '#a78bfa',
-  cyan:       '#38bdf8',
-  orange:     '#f97316',
-  teal:       '#2dd4bf',
-};
+// const C = {
+//   bg:         '#080d18',
+//   surface:    '#0e1420',
+//   surfaceHi:  '#131c2e',
+//   border:     '#1c2a40',
+//   borderDim:  '#111929',
+//   text:       '#f0f4fa',
+//   sub:        '#cbd5e1',
+//   muted:      '#5a7090',
+//   dim:        '#2a3a52',
+//   green:      '#22c55e',
+//   red:        '#ef4444',
+//   blue:       '#3b82f6',
+//   amber:      '#f59e0b',
+//   purple:     '#a78bfa',
+//   cyan:       '#38bdf8',
+//   orange:     '#f97316',
+//   teal:       '#2dd4bf',
+// };
 
 // ─── RESPONSIVE HOOK ──────────────────────────────────────────────────────────
 function useCols(): number {
